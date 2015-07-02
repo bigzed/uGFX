@@ -141,7 +141,7 @@
 		#undef gcw
 	}
 
-	static void HistoryRedraw(GWindowObject *gh) {
+	void HistoryRedraw(GWindowObject *gh) {
 		#define gcw		((GConsoleObject *)gh)
 
 		// No redrawing if there is no history
@@ -279,7 +279,7 @@
 	/**
 	 * Clear the history buffer
 	 */
-	static void clearBuffer(GConsoleObject *gcw) {
+	void clearBuffer(GConsoleObject *gcw) {
 
 		// Only clear if we need to
 		if (!gcw->buffer || (gcw->g.flags & GCONSOLE_FLG_NOSTORE))

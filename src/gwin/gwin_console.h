@@ -170,6 +170,9 @@ void gwinPutCharArray(GHandle gh, const char *str, size_t n);
  */
 void gwinPrintf(GHandle gh, const char *fmt, ...);
 
+void HistoryRedraw(GWindowObject *gh);
+void clearBuffer(GConsoleObject *gcw);
+
 #ifdef __cplusplus
 }
 #endif
